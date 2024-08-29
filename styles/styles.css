@@ -8,11 +8,15 @@
     src: url(../fonts/AARDV.TTF);
 }
 body{
-    background-color: rgb(235, 231, 226);
+    color: rgb(255, 250, 244);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
 }
 h2{
+    display: block;
     font-family: Aardv;
-    color: rgb(41, 81, 116);
+    color: rgb(255, 174, 68);
+    text-shadow: rgb(41, 81, 116) .5px .5px;
 }
 
 .aardv{
@@ -21,21 +25,23 @@ h2{
 }
 p{
     padding-bottom: 10px;
+    text-align: center;
+    font-size: smaller;
 }
 #nav-logo{
-    height: 100px;
+    width: 80%;
     margin: 1rem;
 }
 #nav-bar{
     background-color: rgb(255, 174, 68);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 50px ;
     display: flex;
     flex-wrap: wrap;
 }
 #banner{
-    height: 4rem;
+    width: 90%;
     margin: 1rem;
 }
 main{
@@ -46,23 +52,23 @@ main{
     align-items: center;
 }
 .contenedor{
-    margin: 0 10rem;
+    margin: 0;
     width: 80%;
-    padding: 1rem;
-    background-color: aliceblue;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 .contenedor ul li{
+    padding-top: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-start
 }
 footer{
     height: auto;
     margin-top: 30px;
     padding: 2em;
-    background-color: black;
+    background-color: rgb(106, 106, 106);
     color: white;
     display: flex;
     justify-content: center;
@@ -70,6 +76,7 @@ footer{
 }
 #remera-img{
     width: 50%;
+    mask-image: linear-gradient(black 40%, transparent);
 }
 .burguer-img{
     border-radius: 10px;
@@ -79,4 +86,13 @@ footer{
 .lista-de-hamburguesas{
     padding-left: 0;
     width: 100%;
+}
+h3{
+    font-size: 1.2rem;
+}
+.burguer-info{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
